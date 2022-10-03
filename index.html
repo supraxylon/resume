@@ -1,1 +1,258 @@
-<h1>test</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* * {
+  border: 1px solid green;
+  text-align: center;
+}*/
+.accordion {
+  background-color: #133837;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  transition: 1s;
+}
+.body-background{
+  background-color: #d2f0ea;
+  animation-name: example;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  from {background-color: #d2f0ea;}
+  50% {background-color: #8ec8d8;}
+  to {background-color: #d2f0ea;}
+}
+.active, .accordion:hover {
+  background-color: #000; 
+}
+
+.panel {
+  padding: 18px;
+  display: none;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  position:relative; 
+  top: -20px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0px;
+  height: 100vh; /* Should be removed. Only for demonstration */
+}
+.middle-column{
+  float: left;
+  width: 59%;
+  padding: 0px;
+  height: 100vh; /* Should be removed. Only for demonstration */
+}
+/* how to get the screen height*/
+.element{
+    height: 100vh; /* For 100% screen height */
+    width:  100vw; /* For 100% screen width */
+}
+.the-tabs{
+	color: #133837;
+}
+.spacer{
+	height: 20px;
+    display: flex;
+	align-items: stretch;
+    margin: auto;
+    align-content: center;
+    align-self: center;
+}
+.center-item{
+	margin: auto;
+	text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 300px;
+}
+.my-name {
+  font-size: 28px;
+}
+</style>
+</head>
+<body class='body-background'>
+<div class='row'>
+<div>
+	<img class='img-center' src="https://i.imgur.com/U40JmF7.png" alt="This be my face">
+</div>
+
+<div class='spacer'></div>
+<div class="column"></div>
+<div class="panel">
+  <p>text1</p>
+</div>
+<div class="middle-column center-item"><div class='my-name'>RANDALL SIMONSON</div>
+<div class='spacer'></div>
+
+<div class='spacer'></div>
+<button class="accordion">Education</button>
+<div class="panel">
+  <div><div>Bachelors of chemistry - 2018 Mankato state</div><div class='spacer'></div><div>Bachelors of arts - 2014 - Normandale</div></div>
+</div>
+<div class='spacer'></div>
+<button class="accordion">Work experience</button>
+<div class="panel">
+  <div><div class='text-left'>Mayo Clinic, Cell Kinetics, Lab Technologist, Laboratory Medicine and Pathology, 2019-2020</div><div class='spacer'></div><div class='text-left'>Description:
+Leukemia / lymphoma hematopathic phenotyping via the use of flow cytometry
+</div><div class='text-left'></div><div>●	flow cytometry</div><div>●	FACS Canto (flow cytometer)</div><div>●	Cell staining</div><div>●	Mononuclear white blood cell isolation (test code: PLIBI)</div><div>●	White blood cell isolation</div><div>●	Tumor processing</div><div>●	CSF processing</div><div>●	Bone marrow handling and processing</div><div>●	Accessioning</div>
+<div class='spacer'></div>
+<div class='text-left'>Mayo Clinic, Virology and parasitology, Lab Technologist, Laboratory Medicine and Pathology, 2020 – Ongoing</div><div class='spacer'></div><div class='text-left'>Description:
+Pathogen identification to add to differential diagnosis 
+</div><div>●	Handling live viruses and bacteria <button class="accordion">Click to see full list of organisims</button><div class="panel">Full list of parthenogenic organisms handled:
+Free living acanthamoeba, Borrelia miyamotoi, Chikungunya Virus, Cytomegalovirus, Covid 19, Dengue Virus, Ehrlichia/Anaplasma, Enterovirus, Flu A B and RSV, Herpes Simplex Virus, HHV6, Adenovirus, Babesia species, BK virus, JC virus, Malaria, Microsporidia species, Epstein-Barr Virus, Norovirus, Varicella-Zoster Virus, Parvovirus B19, Lyme Disease, Toxoplasma gondii, zika, West Nile
+</div></div><div>●	Real time polymerase chain reaction</div><div>●	LightCycler® 480</div><div>●	MagNA Pure LC 2.0</div><div>●	Janus automated pipetting</div><div>●	Hologic panther fusion</div><div>●	Luminex ARIES</div><div>●	Biohazard safety cabinet usage</div>
+</div>
+</div>
+<div class='spacer'></div>
+<button class="accordion">research</button>
+<div class="panel">
+  <div class='text-left'>Minnesota State University Mankato, MN	2016-2018
+Chemistry Lab - Dr. Brian L. Groh
+</div>
+  <div class='text-right'>2016-2018</div>
+  <div>•	Founded relationships between Mankato brewery and MNSU</div>
+  <div>•	Fully autonomously operated in a lab setting for 6+ hours a day</div>
+  <div>•	utilized a 2010 Shimadzu GCMS</div>
+  <div>•	Analyzed over 25 GB of raw data and 208 distinct components</div>
+  <div>•	Presented poster at Undergrad Research Symposium</div>
+  <div>•	Built an excel algorithm to determine projected aromatic profiles</div>
+  <div>•	Time management</div>
+  </div>
+<div class='spacer'></div>
+<button class="accordion">References</button>
+<div class="panel">
+  <div>
+  <div>Dr. Brian L. Groh, Ph.D.
+Professor of Chemistry
+Trafton Sciences Center Minnesota State University Mankato, MN 56001 USA 
+brian.groh@mnsu.edu
+</div><div class='spacer'></div>
+  <div>Kaitlyn Kuehn, Biology BS
+Professional college and previous coworker
+608-630-6341
+kuehnkaitlyn@gmail.com
+</div><div class='spacer'></div>
+  <div>Valerie T. White, M.S., MT(ASCP)
+Technical Specialist II
+708-522-3654
+Pikul.Valerie@mayo.edu
+</div><div class='spacer'></div>
+  <div>Nina N. Johnny
+Clinical Lab Technologist
+651-233-3667
+Johnny.Nina@mayo.edu
+</div><div class='spacer'></div>
+  <div>Scott R. Laude
+Clinical Lab Technologist
+507-319-6286
+Laude.Scott@mayo.edu
+</div><div class='spacer'></div>
+  <div></div>
+  </div>
+  </div>
+<div class='spacer'></div>
+<button class="accordion">Honors and awards</button>
+<div class="panel">
+  <div>
+  <div>Above and Beyond Award                                                                    	 2021: 
+Recognized for exceeding expectations and exemplifying Mayo Clinic's mission and vision
+</div><div class='spacer'></div>
+  <div>Undergrad Research Conference	2018:
+Presented my research on the relative abundance of volatile organic constituents in beer over the dry hopping process by utilizing solid phase micro extraction as characterized by GCMS
+</div><div class='spacer'></div>
+  <div>Code Academy / ASU / Autodidactic		2011 - 	Ongoing:
+C#, Python, VBA (Excel), JavaScript, CSS, BASIC, MIPs 
+</div><div class='spacer'></div>
+  <div>Quality Bronze - Mayo Clinic	2020:
+Demonstrated a commitment to process improvement and design.
+</div><div class='spacer'></div>
+  <div>Quality Silver - Mayo Clinic	2022:
+contributed a significant improvement in lab quality
+</div><div class='spacer'></div>
+  <div></div><div class='spacer'></div>
+  <div></div><div class='spacer'></div>
+  </div>
+
+</div>
+<div class="panel">
+  <div class="dev">
+  text2
+  </div>
+</div>
+
+<div class="column"></div>
+<div class="panel">
+  <p>txt3 </p>
+</div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyA3bwkoMllbMNyxx2oVyjQJiFm_Q9Dcy7c",
+    authDomain: "resume-90918.firebaseapp.com",
+    projectId: "resume-90918",
+    storageBucket: "resume-90918.appspot.com",
+    messagingSenderId: "452638860535",
+    appId: "1:452638860535:web:387ed7d785262b9dfc9ff2",
+    measurementId: "G-R73PXFE2BF"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
